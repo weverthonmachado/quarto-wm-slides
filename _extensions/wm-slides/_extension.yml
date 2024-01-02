@@ -1,0 +1,13 @@
+title: WM Slides
+author: Weverthon Machado
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    revealjs:
+      theme: [dark, custom.scss]
+      title-slide-attributes:
+        data-background-image: logo.png
+        data-background-position: 90% 80%
+        data-background-size: 25%
+

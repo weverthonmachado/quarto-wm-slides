@@ -1,0 +1,168 @@
+/*-- scss:defaults --*/
+//-------- Fonts --------
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap');
+
+$font-family-sans-serif:  'Fira Sans Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', sans-serif !default;
+ 
+
+//-------- Colors ---------
+
+// UU palette
+$red:         #C00A35 !default;
+$yellow:      #FFCD00 !default;
+$black:       #000000 !default;
+$white:       #FFFFFF !default;
+
+
+$body-bg:    $white !default;
+$body-color: $black !default;
+$link-color: $body-color !default;
+$accent:     $red;
+$highlight:  $yellow;
+
+
+/*-- scss:rules --*/
+// -------- Text formatting --------
+
+// Standard font sizes
+.reveal {
+  font-size: 32px;
+}
+
+.reveal h1 {
+  font-size: 1.5em;
+}
+
+.reveal h2 {
+  font-size: 1.2em;
+}
+
+.reveal h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #4f4f4f;
+}
+
+.reveal h4 {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0.9em;
+  color: $accent;
+}
+
+
+// Inline formatting helpers
+.reveal .nobold h2{
+  font-weight: normal;
+}
+
+.reveal .smaller,
+.reveal .size50 {
+  font-size: 50%
+}
+
+.reveal .bigger,
+.reveal .size200
+{
+  font-size: 200%
+}
+
+.reveal .size75 {
+  font-size: 75%
+}
+.reveal
+ .size100 {
+  font-size: 100%
+}
+
+.reveal .center {
+  text-align: center;
+}
+
+.reveal .alert {
+  color: $accent;
+}
+
+.reveal .highlight {
+  background-color: $highlight;
+}
+
+
+// -------- Layout --------
+
+
+// Title slide
+#title-slide {
+  text-align: left;
+
+  .institute, .quarto-title-affiliation {
+    font-style: italic;
+    font-size: 80%;
+  }
+
+  .author, .quarto-title-author-name {
+    color: $body-color;
+  }
+
+  .quarto-title-authors {
+    display: flex;
+    justify-content: left;
+  
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+
+  p.author::before, div.quarto-title-author::before {
+    content: "";
+    display: block;
+    border: none;
+    background-color: $accent;
+    color: $accent;
+    height: 3px;
+    margin-bottom: .5em;
+  }
+
+  p, a {
+    color: $body-color;
+  }
+  
+  .date {
+    font-size: 0.7em;
+    margin-top: 3em;
+  }
+  
+}
+
+
+// Other elements 
+.footer {
+  bottom: 10px !important;
+  color: $body-color !important;
+}
+
+
+div.columns-center {
+    display: flex;
+    gap: initial;
+    align-items: center;
+    text-align: center;
+}
+
+.code-copy-button {
+  right: 2em;
+}
+
+/* Increases max height of code blocks 
+(to prevent them from turning into scrollable)*/
+.reveal pre code { 
+   background-color: $code-block-bg; 
+   padding: 6px 9px; 
+   max-height: 700px; 
+   white-space: pre; 
+ }

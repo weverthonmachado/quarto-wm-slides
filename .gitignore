@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+libs/
+*.bib
+template.html
+template.qmd
