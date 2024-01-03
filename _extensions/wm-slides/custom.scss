@@ -164,6 +164,13 @@ $highlight:  $yellow;
   
 }
 
+/* Hide slide number in title slide */
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
+}
+
+
+
 
 // Other elements 
 .footer {
