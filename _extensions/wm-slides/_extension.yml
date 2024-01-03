@@ -6,6 +6,7 @@ contributes:
   formats:
     revealjs:
       theme: [dark, custom.scss]
+      filters: [custom.lua]
       title-slide-attributes:
         data-background-image: logo.png
         data-background-position: 90% 80%
