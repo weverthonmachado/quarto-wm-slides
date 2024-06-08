@@ -125,7 +125,7 @@ $highlight:  $yellow;
 
   .institute, .quarto-title-affiliation {
     font-style: italic;
-    font-size: 80%;
+    font-size: 70%;
   }
 
   .author, .quarto-title-author-name {
@@ -135,22 +135,23 @@ $highlight:  $yellow;
   .quarto-title-authors {
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
   
     .quarto-title-author {
       padding-left: 0em;
       padding-right: 0em;
+      padding-top: 0.2em;
       width: 100%;
     }
   }
 
-  p.author::before, div.quarto-title-author::before {
+  div.quarto-title-authors::before {
     content: "";
     display: block;
-    border: none;
     background-color: $accent;
     color: $accent;
     height: 3px;
-    margin-bottom: .5em;
+    width: 100%;
   }
 
   p, a {
