@@ -21,6 +21,7 @@ $body-color: $black !default;
 $link-color: $body-color !default;
 $accent:     $red;
 $highlight:  $yellow;
+$grey:       #a0a0a0 !default;
 
 
 /*-- scss:rules --*/
@@ -90,7 +91,14 @@ $highlight:  $yellow;
   background-color: $highlight;
 }
 
+.reveal .indent {
+  margin-left: 50px;
+  display: block;
+}
 
+.reveal .grey {
+  color: $grey;
+}
 
 .button {
   display: inline-block;
