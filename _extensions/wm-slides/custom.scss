@@ -212,3 +212,8 @@ div.columns-center {
    max-height: 700px; 
    white-space: pre; 
  }
+
+//  Lifts asides so they appear in exported pdf 
+.reveal .slide aside, .reveal .slide div.aside {
+  bottom: 50px;
+}

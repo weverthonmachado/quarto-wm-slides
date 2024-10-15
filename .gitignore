@@ -7,3 +7,6 @@ libs/
 *.bib
 template.html
 template.qmd
+/.luarc.json
+refs.json
+cheatsheet.qmd
