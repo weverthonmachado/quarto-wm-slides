@@ -6,7 +6,7 @@ contributes:
   formats:
     revealjs:
       theme: [dark, custom.scss]
-      filters: [custom.lua]
+      filters: [custom.lua, typst-embed.lua]
       template-partials:
         - title-slide.html
       title-slide-attributes:
