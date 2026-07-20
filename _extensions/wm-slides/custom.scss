@@ -36,6 +36,10 @@ $grey:       #a0a0a0 !default;
   font-size: 1.5em;
 }
 
+.reveal .title-slide h1{
+  text-decoration: underline $accent;
+} 
+
 .reveal h2 {
   font-size: 1.2em;
 }
@@ -216,4 +220,8 @@ div.columns-center {
 //  Lifts asides so they appear in exported pdf 
 .reveal .slide aside, .reveal .slide div.aside {
   bottom: 50px;
+}
+
+#vcenter {
+  vertical-align: middle;
 }
