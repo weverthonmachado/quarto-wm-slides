@@ -1,0 +1,9 @@
+<script>
+  Reveal.on('ready', () => {
+    if (!/view=print/i.test(window.location.href)) return;
+    document.querySelectorAll('a[href^="#/"]').forEach(a => {
+      const id = decodeURIComponent(a.getAttribute('href').slice(2));
+      if (document.getElementById(id)) a.setAttribute('href', '#' + id);
+    });
+  });
+</script>
